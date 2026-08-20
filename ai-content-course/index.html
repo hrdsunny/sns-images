@@ -202,6 +202,19 @@ footer{background:var(--ink);color:rgba(246,245,241,.45);border-top:1px solid va
   padding:28px 0;font-family:var(--mono);font-size:11.5px;letter-spacing:.05em}
 .foot-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
+/* ---------- 교육 안내 영상 ---------- */
+.video-frame{
+  position:relative;aspect-ratio:16/9;border-radius:3px;overflow:hidden;
+  background:var(--ink);border:1px solid var(--line);
+}
+.video-frame video{width:100%;height:100%;display:block;object-fit:cover;background:var(--ink)}
+.video-meta{
+  margin-top:16px;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;
+  font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--muted);
+}
+.video-meta b{color:var(--ink);font-weight:600}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -222,6 +235,7 @@ footer{background:var(--ink);color:rgba(246,245,241,.45);border-top:1px solid va
       <a href="#why">과정 개요</a>
       <a href="#curriculum">커리큘럼</a>
       <a href="#target">필수 진행</a>
+      <a href="#video">안내 영상</a>
     </div>
     <a class="nav-cta" href="#apply">오시는 길</a>
   </div>
@@ -320,6 +334,28 @@ footer{background:var(--ink);color:rgba(246,245,241,.45);border-top:1px solid va
           <li><span class="tick">03</span><span><b>개인용 핫스팟</b> — 원활한 실습을 위한 안정적인 인터넷 연결에 필요합니다</span></li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="video">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">교육 안내 영상</div>
+      <h2>1분이면,<br>어떤 하루인지 보입니다.</h2>
+      <p>여덟 시간 동안 무엇을 만들고 어떻게 진행되는지 짧은 영상으로 먼저 확인해 보세요.</p>
+    </div>
+    <div class="video-frame rv">
+      <video controls preload="metadata" playsinline
+             aria-label="AI활용 콘텐츠기획 실무과정 교육 안내 영상">
+        <source src="assets/course-intro.mp4" type="video/mp4" />
+        브라우저가 영상 재생을 지원하지 않습니다. <a href="assets/course-intro.mp4">영상 내려받기</a>
+      </video>
+    </div>
+    <div class="video-meta rv">
+      <span>재생시간 <b>1:00</b></span>
+      <span>1920 × 1080</span>
+      <span>소리를 켜고 시청해 주세요</span>
     </div>
   </div>
 </section>
