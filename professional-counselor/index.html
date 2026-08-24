@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>전문상담사 자격과정 | 컨택센터 상담사 민간자격 교육 안내</title>
+<meta name="description" content="효성ITX 민간자격과정. 2026년 9월 15일(화)~16일(수) 09:00–18:00, 2일 16시간. 팔로워십·불만고객 응대·텔레마케팅·DISC·상담 스킬·커뮤니케이션 6개 과목을 배우고 수료 후 시험에 응시합니다." />
+<meta property="og:title" content="전문상담사 자격과정 교육 안내" />
+<meta property="og:description" content="단순 응대를 넘어 솔루션 전문가로 — 전문 상담사로서의 가치를 증명하는 2일 16시간 자격과정" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+<style>
+:root{
+  --ink:#0F172A;
+  --ink-2:#1E293B;
+  --slate:#475569;
+  --muted:#64748B;
+  --faint:#94A3B8;
+  --paper:#F8FAFC;
+  --paper-2:#F1F5F9;
+  --white:#FFFFFF;
+  --lead:#1B4B9B;        /* 전문성 · 상담 */
+  --lead-soft:#EEF4FF;
+  --cert:#B45309;        /* 자격 · 시험 */
+  --cert-soft:#FFF7ED;
+  --line:#E2E8F0;
+  --line-dark:rgba(248,250,252,.16);
+  --sans:'Pretendard Variable','Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  --pad:clamp(20px,5vw,64px);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+section[id],header[id]{scroll-margin-top:74px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:400;font-size:16px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;letter-spacing:-.015em;word-break:keep-all;
+}
+h1,h2,h3,h4{font-weight:800;line-height:1.28;letter-spacing:-.035em;margin:0}
+p{margin:0}
+a{color:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--lead);outline-offset:3px}
+
+.wrap{max-width:1120px;margin:0 auto;padding-inline:var(--pad)}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--lead);
+}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--lead);border-radius:2px}
+.eyebrow.cert{color:var(--cert)}
+.eyebrow.cert::before{background:var(--cert)}
+.eyebrow.on-dark{color:#93C5FD}
+.eyebrow.on-dark::before{background:#93C5FD}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(248,250,252,.86);
+  backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:62px}
+.brand{font-size:14px;font-weight:800;letter-spacing:-.02em;text-decoration:none}
+.brand b{color:var(--lead)}
+.nav-links{display:flex;gap:24px;font-size:14px;color:var(--muted);font-weight:500}
+.nav-links a{text-decoration:none}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{
+  font-size:13px;font-weight:700;text-decoration:none;
+  background:var(--ink);color:var(--white);padding:9px 16px;border-radius:999px;white-space:nowrap;
+}
+.nav-cta:hover{background:var(--lead)}
+@media(max-width:1020px){.nav-links{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(52px,8vw,104px) 0 clamp(40px,6vw,72px)}
+.hero::before{
+  content:"";position:absolute;inset:-40% -10% auto -10%;height:120%;
+  background:
+    radial-gradient(46% 40% at 18% 34%,rgba(27,75,155,.18),transparent 68%),
+    radial-gradient(44% 38% at 82% 22%,rgba(180,83,9,.12),transparent 70%);
+  pointer-events:none;
+}
+.hero-in{position:relative}
+.hero h1{font-size:clamp(34px,6vw,68px);margin:20px 0 0;letter-spacing:-.045em}
+.hero h1 .line{display:block}
+.hero h1 .solve{color:var(--lead)}
+.hero h1 .proof{color:var(--cert)}
+.hero-lede{
+  margin-top:22px;font-size:clamp(15px,1.7vw,19px);color:var(--slate);
+  max-width:44ch;font-weight:500;line-height:1.7;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(28px,5vw,72px);align-items:end;
+}
+.hero-facts{border-top:2px solid var(--ink);padding-top:16px}
+.hero-facts dl{margin:0;display:grid;gap:12px}
+.hero-facts div{
+  display:flex;justify-content:space-between;gap:14px;align-items:baseline;
+  border-bottom:1px dashed var(--line);padding-bottom:12px;
+}
+.hero-facts div:last-child{border-bottom:0;padding-bottom:0}
+.hero-facts dt{font-size:12.5px;font-weight:600;letter-spacing:.08em;color:var(--faint);white-space:nowrap}
+.hero-facts dd{margin:0;font-size:15px;font-weight:700;letter-spacing:-.02em;text-align:right}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;align-items:start}
+  .hero-facts{margin-top:8px}
+}
+
+/* ---------- sections ---------- */
+.sec{padding:clamp(60px,8vw,110px) 0}
+.sec.tint{background:var(--paper-2)}
+.sec.dark{background:var(--ink);color:var(--paper)}
+.sec.dark h2,.sec.dark h3{color:var(--white)}
+.sec-head{max-width:58ch;margin-bottom:clamp(30px,4.5vw,52px)}
+.sec-head h2{font-size:clamp(26px,4vw,44px);margin-top:16px}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px;font-weight:500}
+.sec.dark .sec-head p{color:rgba(248,250,252,.66)}
+
+/* 교육 전 · 후 */
+.shift{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.shift-item{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(22px,3vw,30px);
+}
+.shift-item .before{color:var(--faint);font-size:15px;font-weight:500;text-decoration:line-through;text-decoration-thickness:1.5px}
+.shift-item .arrow{margin:14px 0 10px;font-size:13px;font-weight:700;color:var(--lead);letter-spacing:.04em}
+.shift-item .after{font-size:clamp(17px,2vw,20px);font-weight:800;line-height:1.45;letter-spacing:-.03em}
+@media(max-width:860px){.shift{grid-template-columns:1fr}}
+
+/* 커리큘럼 — 6과목 */
+.subjects{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,20px)}
+@media(max-width:900px){.subjects{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.subjects{grid-template-columns:1fr}}
+.subj{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(22px,3vw,28px);display:flex;flex-direction:column;gap:10px;
+}
+.subj .no{
+  width:30px;height:30px;border-radius:10px;display:grid;place-items:center;
+  font-size:13px;font-weight:800;background:var(--lead-soft);color:var(--lead);
+}
+.subj h3{font-size:clamp(17px,2vw,20px)}
+.subj p{font-size:14.5px;font-weight:500;color:var(--muted);line-height:1.6;letter-spacing:-.01em}
+.curri-note{
+  display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:clamp(22px,3vw,30px);
+  font-size:14px;font-weight:600;color:var(--slate);
+}
+.curri-note b{color:var(--lead);font-weight:800}
+.poster-btn{
+  display:inline-flex;align-items:center;gap:9px;margin-top:24px;cursor:pointer;
+  font-family:inherit;font-size:14.5px;font-weight:700;letter-spacing:-.02em;
+  background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:12px 22px;
+}
+.poster-btn:hover{border-color:var(--lead);color:var(--lead)}
+
+/* 자격 취득 */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.step{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(22px,3vw,28px);
+}
+.step .tag{
+  font-size:11.5px;font-weight:800;letter-spacing:.1em;color:var(--cert);
+  background:var(--cert-soft);border-radius:999px;padding:5px 12px;display:inline-block;
+}
+.step h3{font-size:clamp(17px,2vw,19px);margin-top:14px}
+.step p{margin-top:8px;font-size:14.5px;font-weight:500;color:var(--muted);line-height:1.6}
+.step.final{background:var(--ink);border-color:var(--ink)}
+.step.final h3{color:var(--white)}
+.step.final p{color:rgba(248,250,252,.66)}
+.step.final .tag{background:rgba(251,191,36,.16);color:#FCD34D}
+
+/* 필수 진행 */
+.notice{max-width:64ch}
+.notice-h{font-size:clamp(19px,2.2vw,24px);margin-bottom:10px}
+.notice-p{margin-top:12px;color:rgba(248,250,252,.66);font-weight:500;font-size:16px}
+.notice-p b{color:var(--white);font-weight:700}
+.qr-btn{
+  display:inline-flex;align-items:center;gap:10px;margin-top:24px;cursor:pointer;
+  font-family:inherit;font-size:15px;font-weight:700;letter-spacing:-.02em;
+  background:var(--lead);color:var(--white);border:0;border-radius:999px;padding:14px 24px;
+}
+.qr-btn:hover{background:#16407F}
+
+/* 영상 */
+.video-frame{
+  border-radius:var(--radius);overflow:hidden;background:#000;
+  box-shadow:0 18px 44px rgba(15,23,42,.16);border:1px solid var(--line);
+}
+.video-frame video{display:block;width:100%;height:auto;background:#000}
+.video-meta{
+  display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:16px;
+  font-size:13.5px;color:var(--muted);font-weight:500;
+}
+.video-meta b{color:var(--ink);font-weight:700}
+
+/* 오시는 길 */
+.cta{background:var(--ink);color:var(--paper);padding:clamp(60px,8vw,110px) 0}
+.cta h2{font-size:clamp(28px,4.4vw,48px);margin-top:16px;color:var(--white)}
+.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
+@media(max-width:900px){.cta-grid{grid-template-columns:1fr}}
+.venue-when{
+  display:inline-block;margin-top:18px;font-size:13px;font-weight:700;
+  background:rgba(147,197,253,.16);color:#93C5FD;border-radius:999px;padding:6px 14px;
+}
+.venue-addr{margin-top:18px;font-size:17px;font-weight:500;color:rgba(248,250,252,.86);line-height:1.7}
+.venue-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.venue-tags b{
+  font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;
+  background:rgba(248,250,252,.08);color:rgba(248,250,252,.8);
+}
+.venue-tags b.warn{background:rgba(248,113,113,.16);color:#FCA5A5}
+.venue-call{margin-top:22px;font-size:15px;color:rgba(248,250,252,.7);font-weight:500;display:flex;gap:10px;flex-wrap:wrap}
+.venue-call span{color:var(--faint)}
+.venue-call a{font-weight:700;color:var(--white);text-decoration:none;border-bottom:1px solid rgba(248,250,252,.35)}
+.venue-photo{
+  display:block;aspect-ratio:800/290;border-radius:var(--radius);overflow:hidden;
+  background-size:cover;background-position:center;border:1px solid rgba(248,250,252,.14);
+  transition:transform .25s ease;
+}
+.venue-photo:hover{transform:translateY(-2px)}
+.map-btn{
+  display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+  background:rgba(248,250,252,.1);color:var(--white);
+  font-size:13.5px;font-weight:700;text-decoration:none;padding:11px 18px;border-radius:999px;
+  border:1px solid rgba(248,250,252,.18);
+}
+.map-btn:hover{background:var(--lead);border-color:var(--lead)}
+.venue-note{margin-top:14px;font-size:13.5px;color:rgba(248,250,252,.55);font-weight:500}
+
+/* 맺음 */
+.closing{padding:clamp(56px,7vw,92px) 0;background:var(--lead-soft);text-align:center}
+.closing p{font-size:clamp(19px,2.6vw,28px);font-weight:800;letter-spacing:-.035em;color:#16376F;line-height:1.5}
+.closing small{display:block;margin-top:14px;font-size:15px;font-weight:500;color:var(--lead);letter-spacing:-.01em}
+
+footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size:13px;border-top:1px solid var(--line-dark)}
+.foot-in{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-weight:500}
+
+/* 모달 */
+.qr-modal{
+  position:fixed;inset:0;z-index:100;background:rgba(15,23,42,.86);
+  display:none;align-items:flex-start;justify-content:center;padding:24px;overflow:auto;
+}
+.qr-modal.on{display:flex}
+.qr-box{position:relative;max-width:1000px;width:100%}
+.qr-box.narrow{max-width:620px}
+.qr-box img{width:100%;border-radius:12px;background:#fff}
+.qr-close{
+  position:sticky;top:0;margin-left:auto;display:block;cursor:pointer;
+  font-family:inherit;font-size:13px;font-weight:700;
+  background:var(--white);color:var(--ink);border:0;border-radius:999px;padding:9px 16px;margin-bottom:12px;
+}
+
+/* 스크롤 등장 */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">전문상담사 <b>자격과정</b></a>
+    <div class="nav-links">
+      <a href="#why">교육 방향</a>
+      <a href="#curriculum">교육 내용</a>
+      <a href="#certificate">자격 취득</a>
+      <a href="#required">사전 준비</a>
+      <a href="#video">안내 영상</a>
+      <a href="#venue">오시는 길</a>
+    </div>
+    <a class="nav-cta" href="#required">출결 앱 설치 안내</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Professional Counselor 2026</div>
+        <h1>
+          <span class="line">단순 응대를 넘어</span>
+          <span class="line"><span class="solve">솔루션 전문가</span>로,</span>
+          <span class="line">전문상담사 <span class="proof">자격과정</span></span>
+        </h1>
+        <p class="hero-lede">
+          효성ITX 민간자격과정입니다.
+          전문 상담사로서의 가치를 증명하고 내일의 나를 완성하는
+          2일 16시간, 실무 역량 강화의 시간입니다.
+        </p>
+      </div>
+
+      <div class="hero-facts">
+        <dl>
+          <div><dt>과정명</dt><dd>전문상담사 자격과정</dd></div>
+          <div><dt>일정</dt><dd>2026년 9월 15일 (화)<br>~ 16일 (수)</dd></div>
+          <div><dt>시간</dt><dd>09:00 – 18:00 · 총 16시간</dd></div>
+          <div><dt>대상</dt><dd>컨택센터 상담사</dd></div>
+          <div><dt>장소</dt><dd>본사 4층 교육장</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">이 교육이 바꾸는 것</div>
+      <h2>전화를 받는 사람에서,<br>문제를 푸는 전문가로.</h2>
+      <p>고객은 답변이 아니라 해결을 원합니다. 팔로워십부터 불만고객 응대, 성향별 소통까지 현장에서 바로 쓰는 스킬을 익히고, 수료 후 시험으로 그 역량을 자격으로 증명합니다.</p>
+    </div>
+
+    <div class="shift rv">
+      <div class="shift-item">
+        <p class="before">불만고객을 만나면 말문이 막힌다</p>
+        <p class="arrow">→ 교육 후</p>
+        <p class="after">감정을 먼저 가라앉히고 해결로 이끄는 응대를 한다</p>
+      </div>
+      <div class="shift-item">
+        <p class="before">고객마다 반응이 달라 응대가 흔들린다</p>
+        <p class="arrow">→ 교육 후</p>
+        <p class="after">DISC로 성향을 읽고 그에 맞는 언어로 소통한다</p>
+      </div>
+      <div class="shift-item">
+        <p class="before">경력은 쌓이는데 증명할 것이 없다</p>
+        <p class="arrow">→ 교육 후</p>
+        <p class="after">수료와 시험으로 전문상담사 자격을 손에 쥔다</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec tint" id="curriculum">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow cert">Curriculum · 2일 16시간</div>
+      <h2>여섯 과목,<br>모두 현장의 언어로.</h2>
+      <p>팔로워의 자세와 실무 스킬을 함께 다룹니다. 이론으로 기준을 세우고 사례로 몸에 익혀, 교육 다음 날 콜부터 달라지도록 구성했습니다.</p>
+    </div>
+
+    <div class="subjects rv">
+      <div class="subj">
+        <span class="no">1</span>
+        <h3>전문상담사 Followership</h3>
+        <p>팔로워로서 가져야 할 역량과 마인드 강화</p>
+      </div>
+      <div class="subj">
+        <span class="no">2</span>
+        <h3>불만고객 응대방법</h3>
+        <p>불만고객 대응을 위한 효과적인 응대 스킬</p>
+      </div>
+      <div class="subj">
+        <span class="no">3</span>
+        <h3>텔레마케팅의 이해</h3>
+        <p>텔레마케팅의 기본 이론 및 용어 설명</p>
+      </div>
+      <div class="subj">
+        <span class="no">4</span>
+        <h3>DISC 이해 및 성향파악</h3>
+        <p>DISC 특성 파악 및 고객 성향별 소통방법</p>
+      </div>
+      <div class="subj">
+        <span class="no">5</span>
+        <h3>고객상담 Skill Up</h3>
+        <p>효율적인 상담을 위한 응대 스킬 강화</p>
+      </div>
+      <div class="subj">
+        <span class="no">6</span>
+        <h3>커뮤니케이션 스킬</h3>
+        <p>공감 대화법을 통해 나와 타인을 이해</p>
+      </div>
+    </div>
+
+    <div class="curri-note rv">
+      <span>기간 <b>2일 · 16시간</b></span>
+      <span>운영 <b>09:00 – 18:00</b></span>
+      <span>수료 후 <b>자격시험 응시</b></span>
+    </div>
+
+    <button class="poster-btn rv" type="button" id="posterOpen">
+      과정 안내 포스터 보기 <span aria-hidden="true">↗</span>
+    </button>
+  </div>
+</section>
+
+<section class="sec" id="certificate">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow cert">Certificate · 신청부터 자격까지</div>
+      <h2>배우고, 치르고,<br>증명합니다.</h2>
+      <p>HYOSUNG ITX Contact Center Professional Consultant Certificate — 교육 수료와 시험 응시까지 마쳐야 자격이 부여됩니다.</p>
+    </div>
+
+    <div class="steps rv">
+      <div class="step">
+        <span class="tag">STEP 01</span>
+        <h3>신청 자격</h3>
+        <p>근속 1년 이상 상담사라면 누구나 참여할 수 있습니다.</p>
+      </div>
+      <div class="step">
+        <span class="tag">STEP 02</span>
+        <h3>접수</h3>
+        <p>관리자와 협의 후 접수합니다. 장기근속자 순으로 접수를 권장합니다.</p>
+      </div>
+      <div class="step">
+        <span class="tag">STEP 03</span>
+        <h3>교육 수료</h3>
+        <p>2일 16시간 전 과정을 이수합니다. 출결은 QR 앱으로 확인합니다.</p>
+      </div>
+      <div class="step final">
+        <span class="tag">STEP 04</span>
+        <h3>시험 · 자격 취득</h3>
+        <p>수료 후 자격시험에 응시하여 전문상담사 자격을 취득합니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark" id="required">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow on-dark">Required · 필수 사전 진행</div>
+      <h2>교육 전에<br>꼭 진행해 주세요.</h2>
+    </div>
+
+    <div class="notice rv">
+      <h3 class="notice-h">[필수진행] QR 출결관리 어플 설치 및 회원가입</h3>
+      <p class="notice-p">
+        교육 당일 출결은 <b>고용24 직업훈련 출결관리</b> 앱으로 확인합니다.
+        교육 전에 앱 설치 → 회원가입 → 실명인증 → 기기등록까지 마쳐 주셔야
+        당일 출결 체크가 가능합니다. 등록한 기기로만 출결이 가능하니
+        교육 당일 사용하실 휴대폰으로 등록해 주세요.
+      </p>
+      <p class="notice-p">
+        <b>2일 과정입니다.</b> 이틀 모두 출결 체크가 필요하며, 출결이 확인되어야
+        수료 및 시험 응시가 가능합니다.
+      </p>
+      <button class="qr-btn" type="button" id="qrOpen">
+        상세 메뉴얼 크게 보기 <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="video">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow cert">교육 안내 영상</div>
+      <h2>1분이면,<br>어떤 이틀인지 보입니다.</h2>
+      <p>교육 전 영상 시청으로 전문상담사 자격과정을 먼저 경험해 보세요.</p>
+    </div>
+
+    <div class="video-frame rv">
+      <video controls preload="metadata" playsinline
+             aria-label="전문상담사 자격과정 교육 안내 영상">
+        <source src="assets/course-intro.mp4" type="video/mp4" />
+        브라우저가 영상 재생을 지원하지 않습니다. <a href="assets/course-intro.mp4">영상 내려받기</a>
+      </video>
+    </div>
+    <div class="video-meta rv">
+      <span>재생시간 <b id="vidDur">1:00</b></span>
+      <span id="vidRes">1920 × 1080</span>
+      <span>소리를 켜고 시청해 주세요</span>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="venue">
+  <div class="wrap cta-grid">
+    <div class="rv">
+      <div class="eyebrow on-dark">교육장 위치 안내</div>
+      <h2>본사 4층<br>교육장</h2>
+      <span class="venue-when">08:30부터 입실 가능</span>
+      <p class="venue-addr">서울특별시 영등포구 선유동2로 57<br>이레빌딩 구관 효성ITX 본사</p>
+      <div class="venue-tags">
+        <b class="warn">주차 지원 불가</b>
+        <b>빨간 벽돌 빌딩 (효성ITX어린이집 맞은편)</b>
+      </div>
+      <p class="venue-call">
+        <span>문의처</span>
+        <a href="tel:02-2102-8432">02-2102-8432</a>, <a href="tel:02-2102-8554">8554</a>
+      </p>
+    </div>
+
+    <div class="rv">
+      <a class="venue-photo" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener"
+         style="background-image:url(assets/venue.jpg)" aria-label="효성ITX 본사 이레빌딩 외관 — 네이버 지도로 보기"></a>
+      <a class="map-btn" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener">
+        네이버 지도로 보기 <span aria-hidden="true">↗</span>
+      </a>
+      <p class="venue-note">주차가 지원되지 않으니 대중교통 이용을 권해 드립니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <p>“여러분의 새로운 도약을 응원합니다.<br>꼭 만나요!!”</p>
+    <small>2026.09.15 TUE – 09.16 WED · 09:00–18:00 · 본사 4층 교육장</small>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span>전문상담사 자격과정 · 효성ITX 민간자격과정</span>
+    <span>2026.09.15 – 09.16 / 09:00–18:00 / 16H</span>
+  </div>
+</footer>
+
+<div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-label="고용24 출결관리 사용자 메뉴얼">
+  <div class="qr-box">
+    <button class="qr-close" type="button" data-close>닫기 ✕</button>
+    <img src="assets/attendance-guide.png" alt="고용24 출결관리 사용자 메뉴얼 — 회원가입, 실명인증, 기기등록 안내" />
+  </div>
+</div>
+
+<div class="qr-modal" id="posterModal" role="dialog" aria-modal="true" aria-label="전문상담사 자격과정 안내 포스터">
+  <div class="qr-box narrow">
+    <button class="qr-close" type="button" data-close>닫기 ✕</button>
+    <img src="assets/course-poster.jpg" alt="전문상담사 자격과정 안내 포스터 — 교육 대상, 기간, 신청 방법, 6개 교육 내용" />
+  </div>
+</div>
+
+<script>
+// 모달 (출결 메뉴얼 · 안내 포스터)
+function openModal(el){ el.classList.add('on'); document.body.style.overflow='hidden'; }
+function closeModals(){
+  document.querySelectorAll('.qr-modal.on').forEach(function(m){ m.classList.remove('on'); });
+  document.body.style.overflow='';
+}
+document.getElementById('qrOpen').addEventListener('click', function(){ openModal(document.getElementById('qrModal')); });
+document.getElementById('posterOpen').addEventListener('click', function(){ openModal(document.getElementById('posterModal')); });
+document.querySelectorAll('.qr-modal').forEach(function(m){
+  m.addEventListener('click', function(e){ if(e.target === m) closeModals(); });
+});
+document.querySelectorAll('[data-close]').forEach(function(b){ b.addEventListener('click', closeModals); });
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModals(); });
+
+// 영상 재생시간 · 해상도 표시
+var vid = document.querySelector('#video video');
+vid.addEventListener('loadedmetadata', function(){
+  if(isFinite(vid.duration)){
+    var m = Math.floor(vid.duration/60), s = Math.round(vid.duration%60);
+    if(s === 60){ m += 1; s = 0; }
+    document.getElementById('vidDur').textContent = m + ':' + String(s).padStart(2,'0');
+  }
+  if(vid.videoWidth){
+    document.getElementById('vidRes').textContent = vid.videoWidth + ' × ' + vid.videoHeight;
+  }
+});
+
+// 스크롤 등장
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+// 안전장치 — 관찰자가 동작하지 않는 환경에서도 화면에 들어온 요소는 반드시 보이도록
+function revealInView(){
+  document.querySelectorAll('.rv:not(.in)').forEach(function(el){
+    if(el.getBoundingClientRect().top < window.innerHeight){ el.classList.add('in'); }
+  });
+}
+window.addEventListener('load', function(){ setTimeout(revealInView, 1200); });
+document.addEventListener('visibilitychange', function(){
+  if(!document.hidden){ setTimeout(revealInView, 300); }
+});
+</script>
+</body>
+</html>
