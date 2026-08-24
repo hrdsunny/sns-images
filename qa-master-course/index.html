@@ -117,20 +117,6 @@ img{max-width:100%;display:block}
 .sec-head p{margin-top:16px;color:var(--muted);font-size:17px;font-weight:500}
 .sec.dark .sec-head p{color:rgba(247,250,250,.66)}
 
-/* 이틀의 흐름 */
-.days{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.day{
-  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
-  padding:clamp(24px,3.2vw,34px);position:relative;overflow:hidden;
-}
-.day::after{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--qa)}
-.day:last-child::after{background:var(--gold)}
-.day-tag{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--faint)}
-.day-date{margin-top:10px;font-size:clamp(19px,2.3vw,24px);font-weight:800;letter-spacing:-.03em}
-.day-time{margin-top:6px;font-size:14px;font-weight:600;color:var(--muted)}
-.day-desc{margin-top:16px;font-size:15.5px;font-weight:500;color:var(--slate);line-height:1.7}
-@media(max-width:860px){.days{grid-template-columns:1fr}}
-
 /* 교육 전 · 후 */
 .shift{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .shift-item{
@@ -234,7 +220,6 @@ footer{background:var(--ink);color:rgba(247,250,250,.5);padding:26px 0;font-size
   <div class="wrap nav-in">
     <a class="brand" href="#top">상담품질전문가 <b>입문과정</b></a>
     <div class="nav-links">
-      <a href="#flow">이틀의 흐름</a>
       <a href="#why">교육 방향</a>
       <a href="#required">사전 준비</a>
       <a href="#video">안내 영상</a>
@@ -266,43 +251,18 @@ footer{background:var(--ink);color:rgba(247,250,250,.5);padding:26px 0;font-size
           <div><dt>일정</dt><dd>2026년 10월 22일(목)~23일(금)</dd></div>
           <div><dt>시간</dt><dd>09:00 – 18:00 · 총 16시간</dd></div>
           <div><dt>대상</dt><dd>예비 강사 · 현 QA/교육 강사</dd></div>
-          <div><dt>장소</dt><dd>본사 4층 교육장</dd></div>
         </dl>
       </div>
     </div>
   </div>
 </header>
 
-<section class="sec" id="flow">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">이틀의 흐름</div>
-      <h2>이틀, 16시간.<br>기준을 세우고 현장에 적용합니다.</h2>
-    </div>
-
-    <div class="days rv">
-      <div class="day">
-        <p class="day-tag">DAY 1</p>
-        <p class="day-date">2026년 10월 22일 (목)</p>
-        <p class="day-time">09:00 – 18:00 · 8시간</p>
-        <p class="day-desc">상담품질의 개념과 역할을 정리하고, 현장의 목소리를 어떻게 데이터로 바꿔 읽는지 그 기준을 함께 세웁니다.</p>
-      </div>
-      <div class="day">
-        <p class="day-tag">DAY 2</p>
-        <p class="day-date">2026년 10월 23일 (금)</p>
-        <p class="day-time">09:00 – 18:00 · 8시간</p>
-        <p class="day-desc">세운 기준을 실제 평가와 코칭으로 옮깁니다. 데이터를 고객 경험 개선으로 잇는 QA 전문가의 언어를 익힙니다.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="sec tint" id="why">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">이 교육이 바꾸는 것</div>
-      <h2>느낌으로 듣던 상담을,<br>기준으로 읽게 됩니다.</h2>
-      <p>상담품질은 감(感)이 아니라 기준입니다. 무엇을 어떻게 보고 어떻게 전달할지, 그 기준을 갖춘 사람이 센터의 품질을 바꿉니다.</p>
+      <h2>상담을 듣는 귀에서,<br>경험을 설계하는 눈으로.</h2>
+      <p>상담품질전문가는 통화 하나에 점수를 매기는 사람이 아니라, 고객이 겪은 경험을 읽어 내고 다음 상담을 더 낫게 만드는 사람입니다. 이틀 동안 그 시선의 출발점을 함께 만듭니다.</p>
     </div>
 
     <div class="shift rv">
