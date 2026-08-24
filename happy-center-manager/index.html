@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>행복한 센터 만들기 | 컨택센터 관리자 교육 안내</title>
+<meta name="description" content="마음과 마음이 닿는 따뜻한 울림, 행복한 센터 만들기(관리자). 2026년 10월 16일(금) 09:00~18:00, 본사 4층 교육장에서 진행되는 컨택센터 관리자 대상 1일 8시간 과정 안내입니다." />
+<meta property="og:title" content="행복한 센터 만들기(관리자) 교육 안내" />
+<meta property="og:description" content="2026년 10월 16일(금) 09:00~18:00 · 본사 4층 교육장 · 컨택센터 관리자 1일 과정" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+<style>
+:root{
+  --blue-50:#EFF6FF; --blue-100:#DBEAFE; --blue-600:#2563EB; --blue-700:#1D4ED8;
+  --orange-50:#FFF7ED; --orange-100:#FFEDD5; --orange-500:#F97316;
+  --slate-50:#F8FAFC; --slate-100:#F1F5F9; --slate-200:#E2E8F0;
+  --slate-400:#94A3B8; --slate-500:#64748B; --slate-600:#475569;
+  --slate-700:#334155; --slate-800:#1E293B; --slate-900:#0F172A;
+  --sans:'Pretendard Variable','Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;min-height:100vh;
+  font-family:var(--sans);font-weight:400;color:var(--slate-800);
+  line-height:1.6;letter-spacing:-.015em;-webkit-font-smoothing:antialiased;
+  background:linear-gradient(to bottom right,var(--blue-50),#fff 45%,var(--orange-50));
+  padding-bottom:120px;
+}
+h1,h2,h3{margin:0;font-weight:800;line-height:1.28;letter-spacing:-.03em}
+p{margin:0}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:0}
+.keep{word-break:keep-all}
+:focus-visible{outline:3px solid var(--blue-600);outline-offset:3px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  min-height:340px;overflow:hidden;padding:56px 0;text-align:center;
+}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.2;filter:blur(1px)}
+.hero-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(to bottom,rgba(37,99,235,.10),transparent);
+}
+.hero-in{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 20px}
+.badge{
+  display:inline-block;padding:6px 14px;margin-bottom:20px;border-radius:999px;
+  background:rgba(219,234,254,.8);color:var(--blue-700);
+  font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  backdrop-filter:blur(4px);
+}
+.hero h1{margin-bottom:18px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.05))}
+.hero h1 .sub{display:block;margin-bottom:6px;font-size:clamp(18px,2.6vw,34px);color:var(--slate-600)}
+.hero h1 .main{display:block;font-size:clamp(30px,7vw,68px);color:var(--blue-600);letter-spacing:-.04em}
+.hero-lede{
+  max-width:44ch;margin:0 auto;padding:0 6px;
+  font-size:clamp(13px,1.6vw,19px);font-weight:500;color:var(--slate-600);line-height:1.7;
+}
+
+/* ---------- layout ---------- */
+.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+.stack{position:relative;z-index:2;margin-top:-44px}
+
+/* ---------- fact cards ---------- */
+.facts{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:28px}
+@media(min-width:560px){.facts{grid-template-columns:1fr 1fr;gap:16px}}
+.fact{
+  display:flex;align-items:center;gap:16px;
+  padding:18px;border-radius:16px;background:#fff;
+  border:1px solid var(--slate-100);box-shadow:0 1px 2px rgba(0,0,0,.05);
+  transition:border-color .2s,box-shadow .2s,transform .2s;
+}
+.fact:hover{border-color:var(--blue-100);box-shadow:0 6px 18px rgba(15,23,42,.07);transform:translateY(-2px)}
+.fact .ico{
+  flex:none;width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--slate-50);border:1px solid var(--slate-100);
+}
+.fact dt{margin-bottom:2px;font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--slate-400);text-transform:uppercase}
+.fact dd{margin:0;font-size:15.5px;font-weight:700;color:var(--slate-800);line-height:1.3}
+@media(min-width:768px){.fact{padding:24px}.fact .ico{width:48px;height:48px}.fact dd{font-size:16px}}
+
+/* ---------- cards ---------- */
+.card{
+  margin-bottom:28px;border-radius:20px;background:#fff;overflow:hidden;
+  border:1px solid var(--blue-50);box-shadow:0 20px 30px -12px rgba(219,234,254,.9),0 4px 10px rgba(15,23,42,.04);
+}
+.card-pad{padding:24px}
+@media(min-width:768px){.card{border-radius:24px}.card-pad{padding:32px}}
+.card-head{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.card-head .ico{
+  flex:none;width:40px;height:40px;border-radius:12px;background:var(--blue-100);
+  display:flex;align-items:center;justify-content:center;color:var(--blue-600);
+}
+.card-head h2{font-size:clamp(19px,2.4vw,24px);color:var(--slate-800)}
+
+/* ---------- required ---------- */
+.card.required{border-color:var(--orange-100)}
+.req-bar{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:18px 22px;background:var(--orange-500);color:#fff;
+}
+.req-bar .l{display:flex;align-items:center;gap:10px}
+.req-bar h2{font-size:18px}
+.req-tag{
+  padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.2);
+  font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;
+}
+.req-body{padding:28px 24px;text-align:center}
+.req-body .title{margin-bottom:22px;font-size:clamp(16px,2.2vw,20px);font-weight:700;color:var(--slate-800);line-height:1.45}
+.btn-dark{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;
+  padding:16px 30px;border-radius:14px;background:var(--slate-900);color:#fff;
+  font-size:15.5px;font-weight:700;box-shadow:0 10px 15px -3px rgba(0,0,0,.12);
+  transition:background .2s,transform .1s;
+}
+.btn-dark:hover{background:var(--slate-800)}
+.btn-dark:active{transform:scale(.97)}
+@media(min-width:560px){.btn-dark{width:auto}}
+.req-note{margin-top:16px;font-size:13px;color:var(--slate-400)}
+@media(min-width:768px){.req-body{padding:40px}}
+
+/* ---------- video ---------- */
+.video-frame{
+  position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;
+  border-radius:14px;background:var(--slate-900);border:1px solid var(--slate-200);
+  box-shadow:inset 0 2px 4px rgba(0,0,0,.05);
+}
+.video-frame video{width:100%;height:100%;object-fit:contain;background:#000}
+.video-note{margin-top:16px;text-align:center;font-size:13px;color:var(--slate-400)}
+
+/* ---------- venue ---------- */
+.venue-line{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
+.venue-line .place{font-size:17px;font-weight:700;color:var(--slate-700)}
+.pill-blue{
+  padding:4px 9px;border-radius:7px;background:var(--blue-50);color:var(--blue-600);
+  border:1px solid var(--blue-100);font-size:12px;font-weight:700;
+}
+.venue-addr{font-size:15px;color:var(--slate-500);line-height:1.65}
+.venue-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.tag{padding:3px 9px;border-radius:6px;font-size:12px;font-weight:700}
+.tag.warn{background:#FEE2E2;color:#B91C1C}
+.tag.plain{background:var(--slate-100);color:var(--slate-700);border:1px solid var(--slate-200)}
+.venue-call{display:flex;align-items:center;gap:7px;margin-top:18px;font-size:14.5px;font-weight:500;color:var(--slate-600)}
+.venue-call .lbl{color:var(--slate-400)}
+.venue-call a{font-weight:700;color:var(--slate-800)}
+.venue-photo{
+  position:relative;display:block;width:100%;aspect-ratio:16/9;margin-top:24px;
+  border-radius:16px;overflow:hidden;background:var(--slate-100);
+  box-shadow:inset 0 2px 4px rgba(0,0,0,.05);
+}
+.venue-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.venue-photo:hover img{transform:scale(1.05)}
+.venue-photo .veil{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  background:rgba(0,0,0,.1);transition:background .2s;
+}
+.venue-photo:hover .veil{background:rgba(0,0,0,.25)}
+.venue-photo .chip{
+  display:flex;align-items:center;gap:8px;padding:11px 22px;border-radius:999px;
+  background:rgba(255,255,255,.95);backdrop-filter:blur(4px);
+  font-size:15px;font-weight:700;color:var(--slate-800);
+  box-shadow:0 18px 26px -10px rgba(0,0,0,.3);transition:all .2s;
+}
+.venue-photo:hover .chip{background:var(--blue-600);color:#fff;transform:translateY(-2px)}
+.venue-note{margin-top:14px;text-align:center;font-size:13px;color:var(--slate-400)}
+@media(min-width:640px){.venue-photo{aspect-ratio:auto;height:300px}}
+
+/* ---------- footer ---------- */
+footer{padding:34px 20px 10px;text-align:center}
+footer p{margin-bottom:16px;font-size:14px;font-style:italic;color:var(--slate-400)}
+footer .bar{width:48px;height:4px;margin:0 auto;border-radius:999px;background:var(--blue-100);opacity:.7}
+
+/* ---------- mobile bottom bar ---------- */
+.dock{position:fixed;left:0;right:0;bottom:20px;z-index:50;padding:0 16px;pointer-events:none}
+.dock-in{
+  display:flex;gap:8px;max-width:512px;margin:0 auto;padding:8px;
+  border-radius:18px;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);
+  box-shadow:0 20px 50px rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.5);
+  outline:1px solid rgba(0,0,0,.05);pointer-events:auto;
+}
+.dock-in > *{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:14px 0;border-radius:12px;color:#fff;font-size:14px;font-weight:700;
+  box-shadow:0 10px 15px -3px rgba(0,0,0,.12);transition:transform .1s;
+}
+.dock-in > *:active{transform:scale(.96)}
+.dock .manual{background:var(--slate-900)}
+.dock .map{background:var(--blue-600)}
+@media(min-width:768px){.dock{display:none}body{padding-bottom:60px}}
+
+/* ---------- modal ---------- */
+.modal{
+  position:fixed;inset:0;z-index:100;display:none;
+  background:rgba(15,23,42,.82);padding:16px;overflow:auto;
+}
+.modal.on{display:block}
+.modal-in{max-width:1000px;margin:40px auto 60px;background:#fff;border-radius:16px;overflow:hidden}
+.modal-bar{
+  position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;
+  gap:12px;padding:14px 18px;background:#fff;border-bottom:1px solid var(--slate-200);
+}
+.modal-bar strong{font-size:15px;font-weight:800;color:var(--slate-800)}
+.modal-close{
+  padding:8px 14px;border-radius:9px;background:var(--slate-100);
+  font-size:13px;font-weight:700;color:var(--slate-700);
+}
+.modal-close:hover{background:var(--slate-200)}
+.modal img{width:100%}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg">
+    <img src="assets/venue.jpg" alt="" aria-hidden="true" />
+  </div>
+  <div class="hero-in">
+    <span class="badge">Professional Leader 2026</span>
+    <h1 class="keep">
+      <span class="sub">마음과 마음이 닿는 따뜻한 울림,</span>
+      <span class="main">행복한 센터 만들기</span>
+    </h1>
+    <p class="hero-lede keep">
+      나를 채우는 긍정의 힘, 동료를 향한 다정한 소통.
+      나를 향한 위로로 시작해 미소가 번지는 우리 센터를 만듭니다.
+    </p>
+  </div>
+</header>
+
+<div class="wrap stack">
+
+  <!-- 교육 개요 -->
+  <dl class="facts">
+    <div class="fact">
+      <span class="ico" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></svg>
+      </span>
+      <div>
+        <dt>일정</dt>
+        <dd>2026년 10월 16일 (금요일)</dd>
+      </div>
+    </div>
+    <div class="fact">
+      <span class="ico" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="10"/></svg>
+      </span>
+      <div>
+        <dt>시간</dt>
+        <dd>09:00 ~ 18:00 (총 8시간)</dd>
+      </div>
+    </div>
+    <div class="fact">
+      <span class="ico" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><path d="M16 3.128a4 4 0 0 1 0 7.744"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><circle cx="9" cy="7" r="4"/></svg>
+      </span>
+      <div>
+        <dt>대상</dt>
+        <dd>컨택센터 관리자</dd>
+      </div>
+    </div>
+    <div class="fact">
+      <span class="ico" aria-hidden="true">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+      </span>
+      <div>
+        <dt>장소</dt>
+        <dd>본사 4층 교육장</dd>
+      </div>
+    </div>
+  </dl>
+
+  <!-- 출결 안내 -->
+  <section class="card required" id="attendance">
+    <div class="req-bar">
+      <div class="l">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+        <h2>필수 사전 진행 안내</h2>
+      </div>
+      <span class="req-tag">Required</span>
+    </div>
+    <div class="req-body">
+      <p class="title keep">[필수진행] 고용24 직업훈련 출결관리 앱 설치 및 회원가입</p>
+      <button class="btn-dark" type="button" onclick="openManual()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+        상세 메뉴얼 확인하기
+      </button>
+      <p class="req-note">버튼을 클릭하여 회원가입 · 실명인증 · 기기등록 방법을 확인하세요.</p>
+    </div>
+  </section>
+
+  <!-- 교육 안내 영상 -->
+  <section class="card" id="video">
+    <div class="card-pad">
+      <div class="card-head">
+        <span class="ico" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"/><circle cx="12" cy="12" r="10"/></svg>
+        </span>
+        <h2>교육 안내 영상</h2>
+      </div>
+      <div class="video-frame">
+        <video controls preload="metadata" playsinline aria-label="행복한 센터 만들기 교육 안내 영상">
+          <source src="assets/course-intro.mp4" type="video/mp4" />
+          브라우저가 영상 재생을 지원하지 않습니다.
+          <a href="assets/course-intro.mp4">영상 내려받기</a>
+        </video>
+      </div>
+      <p class="video-note keep">교육 전 영상 시청으로 행복한 센터 만들기를 먼저 경험해 보세요!</p>
+    </div>
+  </section>
+
+  <!-- 교육장 위치 -->
+  <section class="card" id="venue">
+    <div class="card-pad">
+      <div class="card-head">
+        <span class="ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+        </span>
+        <h2>교육장 위치 안내</h2>
+      </div>
+
+      <div class="venue-line">
+        <p class="place">본사 4층 교육장</p>
+        <span class="pill-blue">08:30부터 입실 가능</span>
+      </div>
+      <p class="venue-addr keep">서울특별시 영등포구 선유동2로 57 이레빌딩 구관 효성ITX 본사</p>
+      <div class="venue-tags">
+        <span class="tag warn">주차 지원 불가</span>
+        <span class="tag plain">빨간 벽돌 빌딩(효성ITX어린이집 맞은 편)</span>
+      </div>
+      <p class="venue-call">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+        <span class="lbl">문의처</span>
+        <a href="tel:02-2102-8432">02-2102-8432</a>, <a href="tel:02-2102-8554">8554</a>
+      </p>
+
+      <a class="venue-photo" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener"
+         aria-label="효성ITX 본사 이레빌딩 외관 — 네이버 지도로 보기">
+        <img src="assets/venue.jpg" alt="효성ITX 본사 이레빌딩 외관" />
+        <span class="veil">
+          <span class="chip">
+            지도 상세보기
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </span>
+        </span>
+      </a>
+      <p class="venue-note">주차가 지원되지 않으니 대중교통 이용을 권해 드립니다.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="keep">"여러분의 새로운 도약을 응원합니다. 꼭 만나요!!"</p>
+    <div class="bar"></div>
+  </footer>
+</div>
+
+<!-- 모바일 하단 바 -->
+<div class="dock">
+  <div class="dock-in">
+    <button class="manual" type="button" onclick="openManual()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+      메뉴얼
+    </button>
+    <a class="map" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+      지도보기
+    </a>
+  </div>
+</div>
+
+<!-- 출결 메뉴얼 모달 -->
+<div class="modal" id="manual" role="dialog" aria-modal="true" aria-label="고용24 출결관리 사용자 메뉴얼">
+  <div class="modal-in">
+    <div class="modal-bar">
+      <strong>고용24 출결관리 사용자 메뉴얼</strong>
+      <button class="modal-close" type="button" onclick="closeManual()">닫기 ✕</button>
+    </div>
+    <img src="assets/attendance-guide.png" alt="고용24 출결관리 사용자 메뉴얼 — 회원가입, 실명인증, 기기등록 안내" />
+  </div>
+</div>
+
+<script>
+var manual = document.getElementById('manual');
+function openManual(){ manual.classList.add('on'); document.body.style.overflow = 'hidden'; }
+function closeManual(){ manual.classList.remove('on'); document.body.style.overflow = ''; }
+manual.addEventListener('click', function(e){ if(e.target === manual) closeManual(); });
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeManual(); });
+</script>
+</body>
+</html>
