@@ -138,28 +138,6 @@ img{max-width:100%;display:block}
 .shift-item .after{font-size:clamp(17px,2vw,20px);font-weight:800;line-height:1.45;letter-spacing:-.03em}
 @media(max-width:860px){.shift{grid-template-columns:1fr}}
 
-/* 두 개의 축 */
-.axes{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
-.axis{
-  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
-  padding:clamp(24px,3.2vw,34px);
-}
-.axis .tag{
-  display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;
-  background:var(--mg-soft);color:var(--mg);border-radius:999px;padding:5px 12px;
-}
-.axis.b .tag{background:var(--gold-soft);color:var(--gold)}
-.axis h3{margin-top:14px;font-size:clamp(19px,2.2vw,24px)}
-.axis ul{margin-top:16px;display:grid;gap:10px}
-.axis li{
-  position:relative;padding-left:18px;font-size:15.5px;color:var(--slate);font-weight:500;line-height:1.6;
-}
-.axis li::before{
-  content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--mg);
-}
-.axis.b li::before{background:var(--gold)}
-@media(max-width:860px){.axes{grid-template-columns:1fr}}
-
 /* 필수 진행 */
 .notice{max-width:64ch}
 .notice-h{font-size:clamp(19px,2.2vw,24px);margin-bottom:10px}
@@ -253,7 +231,6 @@ footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size
     <a class="brand" href="#top">센터운영전문가 <b>자격과정</b></a>
     <div class="nav-links">
       <a href="#why">교육 방향</a>
-      <a href="#focus">두 개의 축</a>
       <a href="#required">사전 준비</a>
       <a href="#video">안내 영상</a>
       <a href="#venue">오시는 길</a>
@@ -314,39 +291,6 @@ footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size
         <p class="before">센터 운영이 하루하루를 버티는 일이 된다</p>
         <p class="arrow">→ 교육 후</p>
         <p class="after">목표에서 실행까지 이어지는 운영 체계를 갖춘다</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec" id="focus">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow gold">과정의 두 축</div>
-      <h2>운영관리와 조직관리,<br>두 축을 함께 세웁니다</h2>
-      <p>센터의 성과는 숫자를 다루는 힘과 사람을 이끄는 힘이 함께 움직일 때 만들어집니다. 이틀 동안 두 축을 나란히 다룹니다.</p>
-    </div>
-
-    <div class="axes rv">
-      <div class="axis">
-        <span class="tag">OPERATION</span>
-        <h3>운영관리</h3>
-        <ul>
-          <li>센터 운영 지표를 읽고 현황을 진단하는 눈</li>
-          <li>목표 수립부터 실행 관리까지의 운영 프로세스</li>
-          <li>인력·업무량을 고려한 효율적인 자원 운영</li>
-          <li>데이터에 근거한 개선 과제 도출과 실행</li>
-        </ul>
-      </div>
-      <div class="axis b">
-        <span class="tag">ORGANIZATION</span>
-        <h3>조직관리</h3>
-        <ul>
-          <li>구성원의 동기를 살리는 소통과 피드백</li>
-          <li>성과와 성장을 함께 관리하는 리더의 역할</li>
-          <li>이슈와 갈등에 흔들리지 않는 조직 운영</li>
-          <li>팀의 몰입을 만드는 센터 문화 만들기</li>
-        </ul>
       </div>
     </div>
   </div>
