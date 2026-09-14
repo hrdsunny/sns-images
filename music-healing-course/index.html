@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>음악힐링 | 교육 안내</title>
-<meta name="description" content="컨택센터 임직원을 위한 음악힐링 과정 — 음악과 함께 하는 힐링 프로그램 러브앤뮤직. 2026년 10월 8일(목) 14:30–17:00, 총 2.5시간. 음악이라는 도구로 내 안의 감정을 들여다보고 위로하는 시간입니다." />
+<meta name="description" content="컨택센터 임직원을 위한 음악힐링 과정 — 음악과 함께 하는 힐링 프로그램 러브앤뮤직. 2026년 10월 8일(목) 14:30–17:00, 총 2.5시간. Zoom 비대면 실시간 교육. 음악이라는 도구로 내 안의 감정을 들여다보고 위로하는 시간입니다." />
 <link rel="canonical" href="https://music-healing-course.vercel.app/" />
 
 <!-- 카카오톡 · 페이스북 등 링크 공유 미리보기 -->
@@ -13,10 +13,10 @@
 <meta property="og:site_name" content="음악힐링" />
 <meta property="og:url" content="https://music-healing-course.vercel.app/" />
 <meta property="og:title" content="음악힐링 교육 안내" />
-<meta property="og:description" content="2026년 10월 8일(목) 14:30–17:00 · 총 2.5시간. 음악과 함께 하는 힐링 프로그램 ‘러브앤뮤직’." />
+<meta property="og:description" content="2026년 10월 8일(목) 14:30–17:00 · 총 2.5시간 · Zoom 비대면. 음악과 함께 하는 힐링 프로그램 ‘러브앤뮤직’." />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="음악힐링 교육 안내" />
-<meta name="twitter:description" content="2026년 10월 8일(목) 14:30–17:00 · 총 2.5시간. 컨택센터 임직원 대상." />
+<meta name="twitter:description" content="2026년 10월 8일(목) 14:30–17:00 · 총 2.5시간 · Zoom 비대면. 컨택센터 임직원 대상." />
 
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.css" />
@@ -190,46 +190,52 @@ img{max-width:100%;display:block}
 .steps .ss{display:block;margin-top:6px;font-size:13px;font-weight:500;color:rgba(250,248,252,.6);letter-spacing:-.01em}
 @media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.steps{grid-template-columns:1fr}}
-.qr-btn{
-  display:inline-flex;align-items:center;gap:10px;margin-top:clamp(26px,3.5vw,36px);cursor:pointer;
-  font-family:inherit;font-size:15px;font-weight:700;letter-spacing:-.02em;
-  background:var(--mu);color:var(--white);border:0;border-radius:999px;padding:14px 24px;
-}
-.qr-btn:hover{background:#573A8E}
+/* 참여 준비물 */
+.steps.two{grid-template-columns:repeat(2,1fr);max-width:620px}
+.steps .ss b{color:rgba(250,248,252,.92);font-weight:700}
+@media(max-width:640px){.steps.two{grid-template-columns:1fr}}
 
-/* 오시는 길 */
-.cta{background:var(--ink);color:var(--paper);padding:clamp(60px,8vw,110px) 0}
-.cta h2{font-size:clamp(28px,4.4vw,48px);margin-top:16px;color:var(--white)}
-.cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:start}
-@media(max-width:900px){.cta-grid{grid-template-columns:1fr}}
-.venue-when{
-  display:inline-block;margin-top:18px;font-size:13px;font-weight:700;
-  background:rgba(196,181,253,.18);color:#C4B5FD;border-radius:999px;padding:6px 14px;
+/* 필수 설치 프로그램 */
+.sec-head p b{color:var(--ink);font-weight:700}
+.install-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:16px;align-items:start}
+@media(max-width:900px){.install-grid{grid-template-columns:1fr}}
+.inst{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(24px,3.4vw,34px);height:100%;
 }
-.venue-addr{margin-top:18px;font-size:17px;font-weight:500;color:rgba(250,248,252,.86);line-height:1.7}
-.venue-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
-.venue-tags b{
-  font-size:12.5px;font-weight:700;padding:6px 12px;border-radius:999px;
-  background:rgba(250,248,252,.08);color:rgba(250,248,252,.8);
+.inst h3{display:flex;align-items:center;gap:10px;font-size:17px;letter-spacing:-.02em;margin-bottom:8px}
+.inst .ic{
+  font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--mu);
+  background:var(--mu-soft);border-radius:999px;padding:5px 10px;
 }
-.venue-tags b.warn{background:rgba(248,113,113,.16);color:#FCA5A5}
-.venue-call{margin-top:22px;font-size:15px;color:rgba(250,248,252,.7);font-weight:500;display:flex;gap:10px;flex-wrap:wrap}
-.venue-call span{color:var(--faint)}
-.venue-call a{font-weight:700;color:var(--white);text-decoration:none;border-bottom:1px solid rgba(250,248,252,.35)}
-.venue-photo{
-  display:block;aspect-ratio:800/290;border-radius:var(--radius);overflow:hidden;
-  background-size:cover;background-position:center;border:1px solid rgba(250,248,252,.14);
-  transition:transform .25s ease;
+.inst li{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;padding:18px 0;border-bottom:1px dashed var(--line)}
+.inst li:last-child{border-bottom:0;padding-bottom:0}
+.inst .in{
+  width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--white);
+  font-size:12.5px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px;
 }
-.venue-photo:hover{transform:translateY(-2px)}
-.map-btn{
-  display:inline-flex;align-items:center;gap:8px;margin-top:16px;
-  background:rgba(250,248,252,.1);color:var(--white);
-  font-size:13.5px;font-weight:700;text-decoration:none;padding:11px 18px;border-radius:999px;
-  border:1px solid rgba(250,248,252,.18);
+.inst .it{font-size:16.5px;font-weight:700;letter-spacing:-.025em}
+.inst .it .opt{
+  display:inline-block;margin-left:6px;font-size:11.5px;font-weight:700;letter-spacing:.04em;
+  color:var(--warm);background:var(--warm-soft);border-radius:999px;padding:3px 9px;vertical-align:middle;
 }
-.map-btn:hover{background:var(--mu);border-color:var(--mu)}
-.venue-note{margin-top:14px;font-size:13.5px;color:rgba(250,248,252,.55);font-weight:500}
+.inst .ip{margin-top:8px;font-size:14.5px;font-weight:500;color:var(--muted);line-height:1.7;letter-spacing:-.01em}
+.inst .ip b{color:var(--slate);font-weight:700}
+.link-btn{
+  display:inline-flex;align-items:center;gap:7px;margin-top:12px;
+  font-size:13.5px;font-weight:700;text-decoration:none;letter-spacing:-.02em;
+  background:var(--mu-soft);color:var(--mu);border:1px solid rgba(109,74,176,.22);
+  border-radius:999px;padding:9px 16px;word-break:break-all;
+}
+.link-btn:hover{background:var(--mu);color:var(--white);border-color:var(--mu)}
+.inst-note{margin-top:18px;font-size:13.5px;font-weight:500;color:var(--faint);letter-spacing:-.01em}
+.contact{
+  margin-top:clamp(26px,3.5vw,36px);font-size:15px;font-weight:500;color:var(--muted);
+  display:flex;gap:10px;flex-wrap:wrap;
+}
+.contact span{color:var(--faint)}
+.contact a{font-weight:700;color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.contact a:hover{color:var(--mu);border-color:var(--mu)}
 
 /* 맺음 */
 .closing{padding:clamp(56px,7vw,92px) 0;background:var(--warm-soft);text-align:center}
@@ -238,20 +244,6 @@ img{max-width:100%;display:block}
 
 footer{background:var(--ink);color:rgba(250,248,252,.5);padding:26px 0;font-size:13px;border-top:1px solid var(--line-dark)}
 .foot-in{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-weight:500}
-
-/* 모달 */
-.qr-modal{
-  position:fixed;inset:0;z-index:100;background:rgba(23,19,42,.88);
-  display:none;align-items:flex-start;justify-content:center;padding:24px;overflow:auto;
-}
-.qr-modal.on{display:flex}
-.qr-box{position:relative;max-width:1000px;width:100%}
-.qr-box img{width:100%;border-radius:12px;background:#fff}
-.qr-close{
-  position:sticky;top:0;margin-left:auto;display:block;cursor:pointer;
-  font-family:inherit;font-size:13px;font-weight:700;
-  background:var(--white);color:var(--ink);border:0;border-radius:999px;padding:9px 16px;margin-bottom:12px;
-}
 
 /* 스크롤 등장 */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
@@ -267,10 +259,10 @@ footer{background:var(--ink);color:rgba(250,248,252,.5);padding:26px 0;font-size
     <div class="nav-links">
       <a href="#why">이 시간이 바꾸는 것</a>
       <a href="#content">강의 내용</a>
-      <a href="#required">사전 준비</a>
-      <a href="#venue">오시는 길</a>
+      <a href="#prepare">참여 환경 · 준비물</a>
+      <a href="#install">설치 프로그램</a>
     </div>
-    <a class="nav-cta" href="#required">출결 앱 설치 안내</a>
+    <a class="nav-cta" href="#install">필수 설치 안내</a>
   </div>
 </nav>
 
@@ -297,7 +289,8 @@ footer{background:var(--ink);color:rgba(250,248,252,.5);padding:26px 0;font-size
           <div><dt>일정</dt><dd>2026년 10월 8일(목)</dd></div>
           <div><dt>시간</dt><dd>14:30 – 17:00 · 총 2.5시간</dd></div>
           <div><dt>대상</dt><dd>컨택센터 임직원</dd></div>
-          <div><dt>장소</dt><dd>본사 4층 교육장</dd></div>
+          <div><dt>방식</dt><dd>비대면 실시간 (Zoom)</dd></div>
+          <div><dt>장소</dt><dd>개별 분리된 공간<br>(교육장·회의실·재택 중 선택)</dd></div>
         </dl>
       </div>
     </div>
@@ -385,9 +378,15 @@ footer{background:var(--ink);color:rgba(250,248,252,.5);padding:26px 0;font-size
 
     <ul class="flow rv">
       <li>
-        <span class="t">14:00 –</span>
-        <span class="d">입실 및 출결 체크
-          <small>고용24 출결관리 앱으로 QR 출결을 진행합니다.</small>
+        <span class="t">교육 전</span>
+        <span class="d">기기 · 이어폰 · 프로그램 준비
+          <small>1인 1기기와 이어폰을 준비하고, 크롬 브라우저와 Zoom 설치를 미리 마쳐 주세요.</small>
+        </span>
+      </li>
+      <li>
+        <span class="t">교육 시작 전</span>
+        <span class="d">개별 분리된 공간에서 접속
+          <small>음악을 청취하는 교육입니다. 업무자리가 아닌 교육장·회의실·재택 중 한 곳에서 참여해 주세요.</small>
         </span>
       </li>
       <li>
@@ -396,123 +395,115 @@ footer{background:var(--ink);color:rgba(250,248,252,.5);padding:26px 0;font-size
           <small>귀에 익은 음악에 함께 집중하며 내 안의 감정을 들여다보는 시간입니다.</small>
         </span>
       </li>
-      <li>
-        <span class="t">교육 종료 시</span>
-        <span class="d">퇴실 출결 체크 및 마무리
-          <small>입실과 퇴실 모두 출결 체크가 필요합니다.</small>
-        </span>
-      </li>
     </ul>
   </div>
 </section>
 
-<section class="sec dark" id="required">
+<section class="sec dark" id="prepare">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow on-dark">Required · 필수 사전 진행</div>
-      <h2>교육 전에<br>꼭 진행해 주세요.</h2>
+      <div class="eyebrow on-dark">Online · 비대면 실시간 교육</div>
+      <h2>업무자리가 아닌,<br>나만의 공간에서.</h2>
     </div>
 
     <div class="notice rv">
-      <h3 class="notice-h">[필수진행] QR 출결관리 어플 설치 및 회원가입</h3>
+      <h3 class="notice-h">[장소] 개별 분리된 공간에서 참석해 주세요</h3>
       <p class="notice-p">
-        교육 당일 출결은 <b>고용24 직업훈련 출결관리</b> 앱으로 확인합니다.
-        교육 전에 앱 설치 → 회원가입 → 실명인증 → 기기등록까지 마쳐 주셔야
-        당일 출결 체크가 가능합니다. <b>등록한 기기로만 출결이 가능</b>하니
-        교육 당일 사용하실 휴대폰으로 등록해 주세요.
+        음악을 청취하는 교육입니다. 소리에 온전히 집중할 수 있도록
+        <b>업무자리가 아닌 개별 분리된 공간</b>에서 참여해 주세요.
+        <b>교육장 · 회의실 · 재택</b> 중 편한 곳을 선택하시면 됩니다.
       </p>
     </div>
 
-    <ol class="steps rv">
+    <ol class="steps two rv">
       <li>
-        <span class="sn">STEP 01</span>
-        <span class="sl">앱 다운로드</span>
-        <span class="ss">‘고용24 직업훈련 출결관리’ 설치 후 메인화면 바로가기 클릭</span>
+        <span class="sn">PREP 01</span>
+        <span class="sl">기기 1대</span>
+        <span class="ss">노트북 · 데스크탑PC · 스마트폰 중 선택 — <b>1인 1기기</b>가 필요합니다.</span>
       </li>
       <li>
-        <span class="sn">STEP 02</span>
-        <span class="sl">회원가입</span>
-        <span class="ss">개인회원으로 가입 → 우측 상단 [전체메뉴] 클릭</span>
-      </li>
-      <li>
-        <span class="sn">STEP 03</span>
-        <span class="sl">실명인증</span>
-        <span class="ss">마이페이지 &gt; 개인회원 정보 수정 &gt; 실명확인 (최초 1회)</span>
-      </li>
-      <li>
-        <span class="sn">STEP 04</span>
-        <span class="sl">기기등록</span>
-        <span class="ss">마이페이지 &gt; 나의 출결 기기관리 &gt; [등록] 클릭</span>
+        <span class="sn">PREP 02</span>
+        <span class="sl">이어폰</span>
+        <span class="ss">음악 청취를 위해 반드시 준비해 주세요.</span>
       </li>
     </ol>
-
-    <div class="rv">
-      <button class="qr-btn" type="button" id="qrOpenBtn">
-        상세 메뉴얼 크게 보기 <span aria-hidden="true">↗</span>
-      </button>
-    </div>
   </div>
 </section>
 
-<section class="cta" id="venue">
-  <div class="wrap cta-grid">
-    <div class="rv">
-      <div class="eyebrow on-dark">교육장 위치 안내</div>
-      <h2>본사 4층<br>교육장</h2>
-      <span class="venue-when">14:00부터 입실 가능</span>
-      <p class="venue-addr">서울특별시 영등포구 선유동2로 57<br>이레빌딩 구관 효성ITX 본사</p>
-      <div class="venue-tags">
-        <b class="warn">주차 지원 불가</b>
-        <b>빨간 벽돌 빌딩 (효성ITX어린이집 맞은편)</b>
-      </div>
-      <p class="venue-call">
-        <span>문의처</span>
-        <a href="tel:02-2102-8432">02-2102-8432</a>, <a href="tel:02-2102-8554">8554</a>
-      </p>
+<section class="sec" id="install">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow warm">필수 설치 프로그램</div>
+      <h2>교육 전에<br>미리 설치해 주세요</h2>
+      <p>교육생은 <b>Zoom 회원가입이 필요 없습니다.</b> 프로그램 설치만 마쳐 주시면 됩니다.</p>
     </div>
 
-    <div class="rv">
-      <a class="venue-photo" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener"
-         style="background-image:url(assets/venue.jpg)" aria-label="효성ITX 본사 이레빌딩 외관 — 네이버 지도로 보기"></a>
-      <a class="map-btn" href="https://naver.me/xLWAPHj5" target="_blank" rel="noopener">
-        네이버 지도로 보기 <span aria-hidden="true">↗</span>
-      </a>
-      <p class="venue-note">주차가 지원되지 않으니 대중교통 이용을 권해 드립니다.</p>
+    <div class="install-grid">
+      <div class="inst rv">
+        <h3><span class="ic">PC</span> 데스크탑 · 노트북</h3>
+        <ol>
+          <li>
+            <span class="in">1</span>
+            <div>
+              <p class="it">크롬 브라우저 설치</p>
+              <a class="link-btn" href="https://www.google.co.kr/intl/ko/chrome/" target="_blank" rel="noopener">크롬 다운로드 <span aria-hidden="true">↗</span></a>
+            </div>
+          </li>
+          <li>
+            <span class="in">2</span>
+            <div>
+              <p class="it">Zoom 프로그램 설치</p>
+              <p class="ip">줌 웹사이트 → 상단 오른쪽 <b>‘지원’</b> 클릭 → <b>‘Download Zoom’</b> 클릭 → <b>Windows용 Zoom Workplace</b> 설치</p>
+              <a class="link-btn" href="https://www.zoom.com/ko" target="_blank" rel="noopener">Zoom 웹사이트 <span aria-hidden="true">↗</span></a>
+            </div>
+          </li>
+          <li>
+            <span class="in">3</span>
+            <div>
+              <p class="it">카카오톡 PC 버전 설치 <b class="opt">선택</b></p>
+              <a class="link-btn" href="https://www.kakaocorp.com/service/KakaoTalk" target="_blank" rel="noopener">카카오톡 PC <span aria-hidden="true">↗</span></a>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="inst rv">
+        <h3><span class="ic">MOBILE</span> 스마트폰 · 태블릿</h3>
+        <ol>
+          <li>
+            <span class="in">1</span>
+            <div>
+              <p class="it">Zoom Workplace 다운로드</p>
+              <p class="ip"><b>구글 플레이스토어</b> 또는 <b>앱스토어</b>에서 ‘Zoom Workplace’를 검색해 설치해 주세요.</p>
+            </div>
+          </li>
+        </ol>
+        <p class="inst-note">스마트폰으로 참여하실 경우에도 이어폰은 반드시 필요합니다.</p>
+      </div>
     </div>
+
+    <p class="contact rv">
+      <span>문의처</span>
+      <a href="tel:02-2102-8432">02-2102-8432</a>, <a href="tel:02-2102-8554">8554</a>
+    </p>
   </div>
 </section>
 
 <section class="closing">
   <div class="wrap">
     <p>“음악이 다시 들리고,<br>나의 일상이 다시 보입니다.”</p>
-    <small>2026.10.08 THU · 14:30–17:00 · 본사 4층 교육장</small>
+    <small>2026.10.08 THU · 14:30–17:00 · 비대면 실시간 (Zoom)</small>
   </div>
 </section>
 
 <footer>
   <div class="wrap foot-in">
     <span>음악힐링 · 컨택센터 임직원 대상</span>
-    <span>2026.10.08 / 14:30–17:00 / 2.5H</span>
+    <span>2026.10.08 / 14:30–17:00 / 2.5H / Zoom 비대면</span>
   </div>
 </footer>
 
-<div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-label="고용24 출결관리 사용자 메뉴얼">
-  <div class="qr-box">
-    <button class="qr-close" type="button" id="qrClose">닫기 ✕</button>
-    <img src="assets/attendance-guide.png" alt="고용24 출결관리 사용자 메뉴얼 — 회원가입, 실명인증, 기기등록 안내" />
-  </div>
-</div>
-
 <script>
-// 출결 메뉴얼 팝업
-var qrModal = document.getElementById('qrModal');
-function openQr(){ qrModal.classList.add('on'); document.body.style.overflow='hidden'; }
-function closeQr(){ qrModal.classList.remove('on'); document.body.style.overflow=''; }
-document.getElementById('qrOpenBtn').addEventListener('click', openQr);
-document.getElementById('qrClose').addEventListener('click', closeQr);
-qrModal.addEventListener('click', function(e){ if(e.target === qrModal) closeQr(); });
-document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeQr(); });
-
 // 스크롤 등장
 var io = new IntersectionObserver(function(entries){
   entries.forEach(function(e){
