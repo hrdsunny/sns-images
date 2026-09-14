@@ -167,6 +167,12 @@ img{max-width:100%;display:block}
 .steps .ss{display:block;margin-top:6px;font-size:13px;font-weight:500;color:rgba(248,250,252,.6);letter-spacing:-.01em}
 @media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.steps{grid-template-columns:1fr}}
+.qr-btn{
+  display:inline-flex;align-items:center;gap:10px;margin-top:20px;cursor:pointer;
+  font-family:inherit;font-size:15px;font-weight:700;letter-spacing:-.02em;
+  background:var(--mg);color:var(--white);border:0;border-radius:999px;padding:14px 24px;
+}
+.qr-btn:hover{background:#0D5F59}
 .guide-thumb{
   display:block;margin-top:clamp(26px,3.5vw,36px);padding:0;cursor:zoom-in;
   max-width:560px;width:100%;position:relative;overflow:hidden;
@@ -394,6 +400,12 @@ footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size
       <span class="hint">이미지를 클릭하면 크게 볼 수 있어요 <span aria-hidden="true">⤢</span></span>
     </button>
 
+    <div class="rv">
+      <button class="qr-btn" type="button" id="qrOpenBtn">
+        상세 메뉴얼 크게 보기 <span aria-hidden="true">↗</span>
+      </button>
+    </div>
+
     <p class="guide-cap rv">※ 잦은 기기 변경은 부정출결로 의심받을 수 있으니 주의해 주세요.</p>
   </div>
 </section>
@@ -453,6 +465,7 @@ var qrModal = document.getElementById('qrModal');
 function openQr(){ qrModal.classList.add('on'); document.body.style.overflow='hidden'; }
 function closeQr(){ qrModal.classList.remove('on'); document.body.style.overflow=''; }
 document.getElementById('qrOpen').addEventListener('click', openQr);
+document.getElementById('qrOpenBtn').addEventListener('click', openQr);
 document.getElementById('qrClose').addEventListener('click', closeQr);
 qrModal.addEventListener('click', function(e){ if(e.target === qrModal) closeQr(); });
 document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeQr(); });
