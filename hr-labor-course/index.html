@@ -167,18 +167,7 @@ img{max-width:100%;display:block}
 .steps .ss{display:block;margin-top:6px;font-size:13px;font-weight:500;color:rgba(248,250,252,.6);letter-spacing:-.01em}
 @media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.steps{grid-template-columns:1fr}}
-.qr-btn{
-  display:inline-flex;align-items:center;gap:10px;margin-top:24px;cursor:pointer;
-  font-family:inherit;font-size:15px;font-weight:700;letter-spacing:-.02em;
-  background:var(--mg);color:var(--white);border:0;border-radius:999px;padding:14px 24px;
-}
-.qr-btn:hover{background:#0D5F59}
-.guide-frame{
-  margin-top:clamp(26px,3.5vw,36px);border-radius:var(--radius);overflow:hidden;
-  background:var(--white);border:1px solid rgba(248,250,252,.16);
-}
-.guide-frame img{width:100%}
-.guide-cap{margin-top:12px;font-size:13.5px;color:rgba(248,250,252,.55);font-weight:500}
+.guide-cap{margin-top:clamp(22px,3vw,30px);font-size:13.5px;color:rgba(248,250,252,.55);font-weight:500}
 
 /* 오시는 길 */
 .cta{background:var(--ink);color:var(--paper);padding:clamp(60px,8vw,110px) 0}
@@ -221,20 +210,6 @@ img{max-width:100%;display:block}
 
 footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size:13px;border-top:1px solid var(--line-dark)}
 .foot-in{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-weight:500}
-
-/* 모달 */
-.qr-modal{
-  position:fixed;inset:0;z-index:100;background:rgba(11,18,32,.86);
-  display:none;align-items:flex-start;justify-content:center;padding:24px;overflow:auto;
-}
-.qr-modal.on{display:flex}
-.qr-box{position:relative;max-width:1000px;width:100%}
-.qr-box img{width:100%;border-radius:12px;background:#fff}
-.qr-close{
-  position:sticky;top:0;margin-left:auto;display:block;cursor:pointer;
-  font-family:inherit;font-size:13px;font-weight:700;
-  background:var(--white);color:var(--ink);border:0;border-radius:999px;padding:9px 16px;margin-bottom:12px;
-}
 
 /* 스크롤 등장 */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
@@ -383,15 +358,7 @@ footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size
       </li>
     </ol>
 
-    <div class="guide-frame rv">
-      <img src="assets/attendance-guide.png"
-           alt="고용24 출결관리 사용자 메뉴얼 — 1.회원가입, 2.실명인증, 3.기기등록 단계별 화면 안내" />
-    </div>
     <p class="guide-cap rv">※ 잦은 기기 변경은 부정출결로 의심받을 수 있으니 주의해 주세요.</p>
-
-    <button class="qr-btn rv" type="button" id="qrOpen">
-      상세 메뉴얼 크게 보기 <span aria-hidden="true">↗</span>
-    </button>
   </div>
 </section>
 
@@ -437,23 +404,7 @@ footer{background:var(--ink);color:rgba(248,250,252,.5);padding:26px 0;font-size
   </div>
 </footer>
 
-<div class="qr-modal" id="qrModal" role="dialog" aria-modal="true" aria-label="고용24 출결관리 사용자 메뉴얼">
-  <div class="qr-box">
-    <button class="qr-close" type="button" id="qrClose">닫기 ✕</button>
-    <img src="assets/attendance-guide.png" alt="고용24 출결관리 사용자 메뉴얼 — 회원가입, 실명인증, 기기등록 안내" />
-  </div>
-</div>
-
 <script>
-// 출결 메뉴얼 크게 보기
-var qrModal = document.getElementById('qrModal');
-function openQr(){ qrModal.classList.add('on'); document.body.style.overflow='hidden'; }
-function closeQr(){ qrModal.classList.remove('on'); document.body.style.overflow=''; }
-document.getElementById('qrOpen').addEventListener('click', openQr);
-document.getElementById('qrClose').addEventListener('click', closeQr);
-qrModal.addEventListener('click', function(e){ if(e.target === qrModal) closeQr(); });
-document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeQr(); });
-
 // 스크롤 등장
 var io = new IntersectionObserver(function(entries){
   entries.forEach(function(e){
